@@ -6,5 +6,3 @@
 export const hello = () => {
   return 'Hello, World!';
 };
-
-// vamos ver se isso dá certo
