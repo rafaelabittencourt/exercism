@@ -4,12 +4,12 @@
 //
 
 export const twoFer = (name) => {
-if(name == undefined)
+if(name == undefined || name === "")
  return 'One for you, one for me.';
 else
  return 'One for ' + name + ', one for me.';
 };
 
-/* export const twoFer = (name = 'you') => {
+/*ou export const twoFer = (name = 'you') => {
   return `One for ${name}, one for me.`;
 }; */
