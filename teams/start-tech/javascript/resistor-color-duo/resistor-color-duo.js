@@ -19,4 +19,4 @@ const cores = {
 export const decodedValue = (cor) => {
   const resultado = cores[cor[0]] + cores[cor[1]];
   return +resultado;
-}; 
+};
