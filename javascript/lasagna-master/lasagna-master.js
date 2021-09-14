@@ -18,13 +18,16 @@ export function quantities (layers) {
     let sauce = layers.filter(layer => layer === 'sauce').length * 0.2;
     return {noodles, sauce};
 
-    /* outras possibilidades:
+    /* 
+    
+    outras possibilidades:
+
      return {
         noodles: layers.filter(layer => layer === 'noodles').length*50,
         sauce: layers.filter(layer => layer === 'sauce').length*0.2
     } 
 
-    OU (+lento)
+    OU (+lento):
 
     const quantis = { noodles: 0, sauce: 0 };
     fewLayers.forEach(layers => {
@@ -34,9 +37,8 @@ export function quantities (layers) {
     );
     return quantis;
 
-    OU (+rápido)
+    OU (+rápido): Usar for
 
-    Usar for
     */
 } 
 
