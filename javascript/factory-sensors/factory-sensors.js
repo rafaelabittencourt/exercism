@@ -31,8 +31,7 @@ export function monitorTheMachine({check, alertDeadSensor, alertOverheating, shu
     } else if (error instanceof OverheatingError) {  
       if (error.temperature > 600) { shutdown(); 
       } else { alertOverheating() };
-    }
-    else {
+    } else {
       throw error;
     }
   }
