@@ -20,9 +20,12 @@ export function deleteTrack(playlist, track) {
 }
 
 export function listArtists(playlist) {
+  const newArr = playlist.map(song => song.split(' - ')[1]);
+  /* outra maneira de fazer, com for...of:
   const newArr = [];
   for (let song of playlist) {
     newArr.push(song.split(' - ')[1]); 
   }
+  */
   return [...new Set(newArr)];
 }
