@@ -17,7 +17,7 @@ export class Squares {
 
   get sumOfSquares(): number {
     /* para fazer a soma, usaremos reduce; ele executa uma callback para cada elemento do array, 
-    resultando num único valor de retorno começando do 0 (padrão) ou do némero que você fornecer
+    resultando num único valor de retorno começando do 0 (padrão) ou do número que você fornecer
     */
     return this.arrayN.reduce((soma, valor) => soma + valor ** 2); // soma dos valores ao quadrado
   }
